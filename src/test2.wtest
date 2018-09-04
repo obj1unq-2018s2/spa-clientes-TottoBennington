@@ -1,0 +1,8 @@
+import personas.*
+/*
+describe "tests de ramiro"{
+	test "Masajes"{
+		ramiro.recibirMasajes()
+		assert.equals()
+	}
+}*/

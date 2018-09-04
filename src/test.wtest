@@ -1,0 +1,37 @@
+import personas.*
+describe "tests de bruno"{
+	test "Masajes"{
+		bruno.recibirMasajes()
+		assert.equals(true, bruno.esFeliz())
+	}
+	test "Baño de vapor y efectos del mismo"{
+		bruno.darseUnBanioDeVapor()
+		assert.equals(54500, bruno.peso())
+		assert.equals(true, bruno.tieneSed())
+	}
+	test "Tomar agua para quitar la sed"{
+		bruno.darseUnBanioDeVapor()
+		bruno.tomarAgua()
+		assert.equals(false, bruno.tieneSed())
+	}
+	test "Comer fideos y efectos del mismo"{
+		bruno.darseUnBanioDeVapor()
+		bruno.tomarAgua()
+		bruno.comerFideos()
+		assert.equals(54750, bruno.peso())
+		assert.equals(true, bruno.tieneSed())
+	}
+	test "Correr y bajar 300grs"{
+		bruno.darseUnBanioDeVapor()
+		bruno.tomarAgua()
+		bruno.comerFideos()
+		bruno.correr()
+		assert.equals(54450, bruno.peso())
+	}
+	test "Noticiero"{
+		bruno.recibirMasajes() // masajes recibidos en el test 1
+		bruno.verElNoticiero()
+		assert.equals(false, bruno.esFeliz())
+	}
+}
+
