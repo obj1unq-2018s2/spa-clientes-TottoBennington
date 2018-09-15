@@ -31,7 +31,7 @@ object bruno {
 	method mediodiaEnCasa() { 
 		self.comerFideos()
 		self.tomarAgua()
-		self.verElNoticieron()
+		self.verElNoticiero()
 	}
 }
 
@@ -60,7 +60,7 @@ object ramiro {
 	
 	method diaDeTrabajo() { 
 		self.bajarALaFosa()
-		self.comerUnBigMac()
+		self.comerseUnBigMac()
 		self.bajarALaFosa()
 	}
 }
